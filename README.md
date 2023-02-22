@@ -1,5 +1,4 @@
 # Teoría de Autómatas: validación de cadenas a partir de una expresión regular
-Genera un alfabeto a partir de un nombre y matricula y valida una cadena ingresada a partir de una expresión regular.
 
 Desarrollar un programa computacional para el lenguaje regular que represente todas las
 cadenas escritas sobre el alfabeto compuesto por todas las letras de tu(s) nombre(s) y apellidos,
@@ -18,11 +17,13 @@ resultado indique si la cadena es válida o no para el lenguaje regular. Además
 opción de solicitar otra cadena de entrada para analizar, hasta que ya no se quiera analizar más
 cadenas.
 
-### Ejemplo de cadenas válidas.
+### Ejemplo de cadenas válidas
+
 Nombre: yazmany jahaziel guerrero ceja
 Matrícula: 1339767
 
 El alfabeto es:
 S = { y, a, z, m, n, j, h, i, e, l, g, u, r, o, c, 1, 3, 9, 7, 6, . }
+
 Una entrada válida: 1mnyjgccicyjgci.an3.1339767
 Otra entrada válida: 6611zzzraoll99yjgc3j1.1339767
