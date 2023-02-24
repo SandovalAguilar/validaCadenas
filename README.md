@@ -23,7 +23,7 @@ Nombre: yazmany jahaziel guerrero ceja
 Matrícula: 1339767
 
 El alfabeto es:
-$S = { y, a, z, m, n, j, h, i, e, l, g, u, r, o, c, 1, 3, 9, 7, 6, . }$
+$S = \{ y, a, z, m, n, j, h, i, e, l, g, u, r, o, c, 1, 3, 9, 7, 6, . \}$
 
-Una entrada válida: 1mnyjgccicyjgci.an3.1339767
+Una entrada válida: 1mnyjgccicyjgci.an3.1339767  
 Otra entrada válida: 6611zzzraoll99yjgc3j1.1339767
