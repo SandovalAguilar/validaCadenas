@@ -20,6 +20,29 @@ nombrePredeterminado = "yazmany jahaziel guerrero ceja"
 matriculaPredeterminada = "1339767"
 '''
 
+# Funciones para validar la matricula y el nombre ingresados por el usuario
+def validaMatriculaIngresada():
+    while(True):
+        print("Ingrese una matricula: ")
+        matriculaIngresada = input()
+
+        if len(matriculaIngresada) == 7 and matriculaIngresada.isnumeric():
+            return matriculaIngresada
+        else:
+            print(" - La matricula ingresada contiene al menos una letra o tiene menos de 7 elementos o mas.")
+            False
+
+def validaNombreIngresado():
+    while(True):
+        print("Ingrese un nombre: ")
+        nombreIngresado = input()
+
+        if nombreIngresado.replace(" ", "").isalpha():
+            return nombreIngresado
+        else:
+            print("- El nombre ingresado contiene numeros o caracteres invalidos (*, ., /, etc.).")
+            False
+
 # Funciones para generar conjuntos e iniciales
 def generaIniciales(nombre):
     palabras = nombre.lower().split(' ')
@@ -105,10 +128,8 @@ def primerOpcion():
 def segundaOpcion():
     centinela = True
     os.system('cls||clear')
-    print("Ingrese una matricula: ")
-    matricula = input()
-    print("Ingrese un nombre:")
-    nombre = input()
+    matricula = validaMatriculaIngresada()
+    nombre = validaNombreIngresado()
 
     while(centinela):
         print("----------------------------------------")
