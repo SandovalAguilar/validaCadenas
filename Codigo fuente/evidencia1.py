@@ -74,7 +74,9 @@ def generaDigitos(matricula):
 
 # Funcion para validar la cadena ingresada
 def validaCadenas(cadena, digitos, alfabeto, iniciales, matricula):
-    expresionRegular = "^(" + digitos[:-1] + ")([" + alfabeto + ".]*)((" + iniciales + "){1,})([" + alfabeto + ".]*)(\.)(" + matricula + ")"
+    expresionRegular = "^(" + digitos[:-1] + ")([" + alfabeto + ".]*)((" + iniciales + "){1,})([" + alfabeto + ".]*)(\.)(" + matricula + "$)"
+    # expresionRegular = "^(" + digitos[:-1] + ")([" + alfabeto + ".]*)((" + iniciales + "){1,})([" + alfabeto + "]*)\." + matricula
+    # print(expresionRegular)
     validaCadena = re.search(expresionRegular, cadena)
     validaPuntosConsecutivos = re.search("\.{2,}", cadena)
 
@@ -136,7 +138,7 @@ def segundaOpcion():
         print("Nombre ingresado: " + nombre)
         print("Matricula ingresada: " + matricula)
         print("Alfabeto generado a partir del nombre\ny matricula:")
-        print("Σ = {" + generaAlfabeto(nombre, matricula)[:-1] + "}")
+        print("Σ = {" + generaAlfabeto(nombre, matricula)[:-1] + ",.}")
         print("----------------------------------------")
         print("Ingrese una cadena para validar:")
         cadena = input()
